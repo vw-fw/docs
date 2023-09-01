@@ -1,0 +1,93 @@
+Dnscryptproxy
+~~~~~~~~~~~~~
+
+.. csv-table:: Resources (CloakController.php)
+   :header: "Method", "Module", "Controller", "Command", "Parameters"
+   :widths: 4, 15, 15, 30, 40
+
+    "``POST``","dnscryptproxy","cloak","addCloak",""
+    "``POST``","dnscryptproxy","cloak","delCloak","$uuid"
+    "``GET``","dnscryptproxy","cloak","get",""
+    "``GET``","dnscryptproxy","cloak","getCloak","$uuid=null"
+    "``*``","dnscryptproxy","cloak","searchCloak",""
+    "``POST``","dnscryptproxy","cloak","set",""
+    "``POST``","dnscryptproxy","cloak","setCloak","$uuid"
+    "``POST``","dnscryptproxy","cloak","toggleCloak","$uuid"
+
+    "``<<uses>>``", "", "", "", "*model* `Cloak.xml <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/src/opnsense/mvc/app/models/Veritawall/Dnscryptproxy/Cloak.xml>`__"
+
+.. csv-table:: Service (DnsblController.php)
+   :header: "Method", "Module", "Controller", "Command", "Parameters"
+   :widths: 4, 15, 15, 30, 40
+
+    "``GET``","dnscryptproxy","dnsbl","get",""
+    "``POST``","dnscryptproxy","dnsbl","set",""
+
+    "``<<uses>>``", "", "", "", "*model* `Dnsbl.xml <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/src/opnsense/mvc/app/models/Veritawall/Dnscryptproxy/Dnsbl.xml>`__"
+
+.. csv-table:: Resources (ForwardController.php)
+   :header: "Method", "Module", "Controller", "Command", "Parameters"
+   :widths: 4, 15, 15, 30, 40
+
+    "``POST``","dnscryptproxy","forward","addForward",""
+    "``POST``","dnscryptproxy","forward","delForward","$uuid"
+    "``GET``","dnscryptproxy","forward","get",""
+    "``GET``","dnscryptproxy","forward","getForward","$uuid=null"
+    "``*``","dnscryptproxy","forward","searchForward",""
+    "``POST``","dnscryptproxy","forward","set",""
+    "``POST``","dnscryptproxy","forward","setForward","$uuid"
+    "``POST``","dnscryptproxy","forward","toggleForward","$uuid"
+
+    "``<<uses>>``", "", "", "", "*model* `Forward.xml <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/src/opnsense/mvc/app/models/Veritawall/Dnscryptproxy/Forward.xml>`__"
+
+.. csv-table:: Service (GeneralController.php)
+   :header: "Method", "Module", "Controller", "Command", "Parameters"
+   :widths: 4, 15, 15, 30, 40
+
+    "``GET``","dnscryptproxy","general","get",""
+    "``POST``","dnscryptproxy","general","set",""
+
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/src/opnsense/mvc/app/models/Veritawall/Dnscryptproxy/General.xml>`__"
+
+.. csv-table:: Resources (ServerController.php)
+   :header: "Method", "Module", "Controller", "Command", "Parameters"
+   :widths: 4, 15, 15, 30, 40
+
+    "``POST``","dnscryptproxy","server","addServer",""
+    "``POST``","dnscryptproxy","server","delServer","$uuid"
+    "``GET``","dnscryptproxy","server","get",""
+    "``GET``","dnscryptproxy","server","getServer","$uuid=null"
+    "``*``","dnscryptproxy","server","searchServer",""
+    "``POST``","dnscryptproxy","server","set",""
+    "``POST``","dnscryptproxy","server","setServer","$uuid"
+    "``POST``","dnscryptproxy","server","toggleServer","$uuid"
+
+    "``<<uses>>``", "", "", "", "*model* `Server.xml <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/src/opnsense/mvc/app/models/Veritawall/Dnscryptproxy/Server.xml>`__"
+
+.. csv-table:: Service (ServiceController.php)
+   :header: "Method", "Module", "Controller", "Command", "Parameters"
+   :widths: 4, 15, 15, 30, 40
+
+    "``GET``","dnscryptproxy","service","dnsbl",""
+    "``POST``","dnscryptproxy","service","reconfigure",""
+    "``POST``","dnscryptproxy","service","restart",""
+    "``POST``","dnscryptproxy","service","start",""
+    "``GET``","dnscryptproxy","service","status",""
+    "``POST``","dnscryptproxy","service","stop",""
+
+    "``<<uses>>``", "", "", "", "*model* `General.xml <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/src/opnsense/mvc/app/models/Veritawall/Dnscryptproxy/General.xml>`__"
+
+.. csv-table:: Resources (WhitelistController.php)
+   :header: "Method", "Module", "Controller", "Command", "Parameters"
+   :widths: 4, 15, 15, 30, 40
+
+    "``POST``","dnscryptproxy","whitelist","addWhitelist",""
+    "``POST``","dnscryptproxy","whitelist","delWhitelist","$uuid"
+    "``GET``","dnscryptproxy","whitelist","get",""
+    "``GET``","dnscryptproxy","whitelist","getWhitelist","$uuid=null"
+    "``*``","dnscryptproxy","whitelist","searchWhitelist",""
+    "``POST``","dnscryptproxy","whitelist","set",""
+    "``POST``","dnscryptproxy","whitelist","setWhitelist","$uuid"
+    "``POST``","dnscryptproxy","whitelist","toggleWhitelist","$uuid"
+
+    "``<<uses>>``", "", "", "", "*model* `Whitelist.xml <https://github.com/opnsense/plugins/blob/master/dns/dnscrypt-proxy/src/opnsense/mvc/app/models/Veritawall/Dnscryptproxy/Whitelist.xml>`__"
